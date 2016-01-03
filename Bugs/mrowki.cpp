@@ -1,29 +1,13 @@
 #include <iostream>
-#include <windows.h>
 #include "mrowki.h"
-
-HANDLE h1 = GetStdHandle(STD_OUTPUT_HANDLE);
-void mrowki::print(short x, short y, char c) {
-	COORD p = { x, y };
-	SetConsoleCursorPosition(h1, p);
-	printf("%c", c);
-}
-
-void mrowki::print(short x, short y, int c) {
-	COORD p = { x, y };
-	SetConsoleCursorPosition(h1, p);
-	printf("%d", c);
-}
 
 mrowki::mrowki()
 {
 	x = 40;
 	y = 12;
 	los = 0;
-	static int licznikm;
-	numer = licznikm++;
+	numer = licznik++;
 }
-
 
 mrowki::~mrowki()
 {

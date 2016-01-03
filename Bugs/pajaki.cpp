@@ -1,34 +1,17 @@
 #include <iostream>
-#include <windows.h>
 #include "pajaki.h"
-
-HANDLE h2 = GetStdHandle(STD_OUTPUT_HANDLE);
-void pajaki::print(short x, short y, char c) {
-	COORD p = { x, y };
-	SetConsoleCursorPosition(h2, p);
-	printf("%c", c);
-}
-
-void pajaki::print(short x, short y, int c) {
-	COORD p = { x, y };
-	SetConsoleCursorPosition(h2, p);
-	printf("%d", c);
-}
 
 pajaki::pajaki()
 {
 	x = 40;
 	y = 12;
 	los = 0;
-	static int licznikp;
-	numer = licznikp++;
+	numer = licznik++;
 }
-
 
 pajaki::~pajaki()
 {
 }
-
 
 void pajaki::ruch()
 {
