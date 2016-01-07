@@ -1,5 +1,8 @@
 #include <iostream>
+#include <windows.h>
 #include "mrowki.h"
+
+HANDLE h1 = GetStdHandle(STD_OUTPUT_HANDLE);
 
 mrowki::mrowki()
 {
@@ -24,5 +27,6 @@ void mrowki::ruch()
 	y += los;
 	if (y < 0) y = 0;
 	if (y > 23) y = 23;
+	SetConsoleTextAttribute(h1, FOREGROUND_RED | FOREGROUND_INTENSITY);
 	print(x, y, numer);
 }

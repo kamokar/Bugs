@@ -1,5 +1,8 @@
 #include <iostream>
+#include <windows.h>
 #include "pajaki.h"
+
+ HANDLE h2 = GetStdHandle(STD_OUTPUT_HANDLE);
 
 pajaki::pajaki()
 {
@@ -24,5 +27,6 @@ void pajaki::ruch()
 	y += los;
 	if (y < 0) y = 0;
 	if (y > 23) y = 23;
-	print(x, y, numer+5);
+	SetConsoleTextAttribute(h2, FOREGROUND_GREEN | FOREGROUND_INTENSITY );
+	print(x, y, numer);
 }

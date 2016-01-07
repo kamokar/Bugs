@@ -1,5 +1,6 @@
 #pragma once
 #include "robaki.h"
+
 class mrowki : public robaki
 {
 	int x;
