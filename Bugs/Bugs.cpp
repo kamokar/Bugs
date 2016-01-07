@@ -10,7 +10,7 @@ int robaki::licznik = 0;
 
 int main()
 {
-	const int ilosc = 5;
+	const int ilosc = 95;
 	robaki *robak;
 	pajaki *pajak[ilosc];
 	mrowki *mrowka[ilosc];
@@ -31,7 +31,7 @@ int main()
 		robak = mrowka[i];
 		robak->ruch();
 
-		Sleep(10);
+		//Sleep(1);
 		}
 
 
