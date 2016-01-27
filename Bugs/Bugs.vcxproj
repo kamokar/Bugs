@@ -147,12 +147,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mrowki.cpp" />
+    <ClCompile Include="muchy.cpp" />
     <ClCompile Include="pajaki.cpp" />
     <ClCompile Include="Bugs.cpp" />
     <ClCompile Include="robaki.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mrowki.h" />
+    <ClInclude Include="muchy.h" />
     <ClInclude Include="pajaki.h" />
     <ClInclude Include="robaki.h" />
   </ItemGroup>

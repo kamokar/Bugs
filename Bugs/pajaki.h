@@ -7,7 +7,6 @@ class pajaki : public robaki
 	int y;
 	void ruch();
 	int numer;
-	int los;
 
 public:
 	pajaki();

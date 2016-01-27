@@ -5,7 +5,7 @@ class robaki
 public:
 	static int licznik;
 	robaki();
-	~robaki();
+	virtual ~robaki();
 	virtual void ruch() = 0;
 
 protected:
